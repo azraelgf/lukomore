@@ -1431,7 +1431,7 @@ textarea.input {
   background: var(--white);
   border-radius: 1rem;
   overflow: hidden;
-  min-height: 100%;
+  min-height: 22.875rem;
   position: relative;
 }
 
@@ -1455,8 +1455,13 @@ textarea.input {
 }
 
 .why-slide__header strong {
+  max-width: 12.8125rem;
   font-weight: 500;
   line-height: 1.2;
+}
+
+.why-slide__header._long strong {
+  max-width: 13.75rem;
 }
 
 .why-slide__text {
@@ -1464,6 +1469,7 @@ textarea.input {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   line-height: 130%;
+  max-width: 19.375rem;
 }
 
 .safe {
@@ -5418,6 +5424,10 @@ textarea.input {
 
   .why-slide {
     min-height: 20.625rem;
+  }
+
+  .why-slide::before {
+    background: url("../img/slider/why/slide-dec.svg") no-repeat bottom/cover;
   }
 
   .why-slide {
