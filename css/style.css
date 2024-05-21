@@ -1616,6 +1616,7 @@ textarea.input {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   line-height: 130%;
+  max-width: 21.25rem;
 }
 
 .dop-classes-slide__img {
