@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240521114948">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240523123914">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" data-scroll="500" data-scroll-show="1000">
 			<div class="header__container">
 				<div class="header-top">
 					<div class="header-top__col">
@@ -67,7 +67,7 @@
 							</div>
 						</nav>
 					</div>
-					<div class="header-bottom__social social">
+					<div class="header-bottom__social social" data-da=".menu__mobile, 991.98,last">
 						<a href="" class="social__item">
 							<img src="img/icons/social/telegram.svg" alt="Image">
 						</a>
@@ -590,6 +590,9 @@
 			</section>
 		</main>
 		<footer class="footer">
+			<button class="button-up" data-scroll="500" type="button" data-goto=".hero">
+				<img src="img/icons/dropdown.svg" alt="arrow-up">
+			</button>
 			<div class="footer__container">
 				<a href="/" class="footer__logo logo"><img src="img/logo.svg" alt="Logo"></a>
 				<div class="footer__link">
@@ -603,7 +606,7 @@
 		</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20240521114948"></script>
+	<script src="js/app.min.js?_v=20240523123914"></script>
 </body>
 
 </html>
