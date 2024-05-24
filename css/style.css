@@ -783,6 +783,21 @@ textarea.input {
       align-self: start;
 }
 
+.where .social__item:first-child,
+.where .social__item:nth-child(2) {
+  border-radius: 50%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .social.support__social,
 .contacts__social .social {
   display: -ms-grid;
@@ -3902,6 +3917,32 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     height: 3.75rem;
   }
 
+  .where .social__item:first-child,
+  .where .social__item:nth-child(2) {
+    -ms-flex-preferred-size: 3.75rem;
+        flex-basis: 3.75rem;
+  }
+
+  .where .social__item:first-child,
+  .where .social__item:nth-child(2) {
+    height: 3.75rem;
+  }
+
+  .where .social__item:first-child,
+  .where .social__item:nth-child(2) {
+    width: 3.75rem;
+  }
+
+  .where .social__item:first-child img,
+  .where .social__item:nth-child(2) img {
+    width: 3.375rem;
+  }
+
+  .where .social__item:first-child img,
+  .where .social__item:nth-child(2) img {
+    height: 3.375rem;
+  }
+
   .social.support__social,
   .contacts__social .social {
     -webkit-column-gap: 2.5rem;
@@ -4865,6 +4906,32 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .support__social .social__item img,
   .contacts__social .social__item img {
     height: 2.5rem;
+  }
+
+  .where .social__item:first-child,
+  .where .social__item:nth-child(2) {
+    -ms-flex-preferred-size: 2.5rem;
+        flex-basis: 2.5rem;
+  }
+
+  .where .social__item:first-child,
+  .where .social__item:nth-child(2) {
+    height: 2.5rem;
+  }
+
+  .where .social__item:first-child,
+  .where .social__item:nth-child(2) {
+    width: 2.5rem;
+  }
+
+  .where .social__item:first-child img,
+  .where .social__item:nth-child(2) img {
+    width: 2.125rem;
+  }
+
+  .where .social__item:first-child img,
+  .where .social__item:nth-child(2) img {
+    height: 2.125rem;
   }
 
   .social.support__social,
@@ -6796,6 +6863,78 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     .support__social .social__item img,
     .contacts__social .social__item img {
       height: calc(2.5rem + 1.25 * (100vw - 20rem) / 55.125);
+    }
+}
+
+@supports (flex-basis: clamp( 2.5rem , 2.0464852608rem  +  2.2675736961vw , 3.75rem )) {
+    .where .social__item:first-child,
+    .where .social__item:nth-child(2) {
+      -ms-flex-preferred-size: clamp( 2.5rem , 2.0464852608rem  +  2.2675736961vw , 3.75rem );
+          flex-basis: clamp( 2.5rem , 2.0464852608rem  +  2.2675736961vw , 3.75rem );
+    }
+}
+
+@supports not (flex-basis: clamp( 2.5rem , 2.0464852608rem  +  2.2675736961vw , 3.75rem )) {
+    .where .social__item:first-child,
+    .where .social__item:nth-child(2) {
+      -ms-flex-preferred-size: calc(2.5rem + 1.25 * (100vw - 20rem) / 55.125);
+          flex-basis: calc(2.5rem + 1.25 * (100vw - 20rem) / 55.125);
+    }
+}
+
+@supports (height: clamp( 2.5rem , 2.0464852608rem  +  2.2675736961vw , 3.75rem )) {
+    .where .social__item:first-child,
+    .where .social__item:nth-child(2) {
+      height: clamp( 2.5rem , 2.0464852608rem  +  2.2675736961vw , 3.75rem );
+    }
+}
+
+@supports not (height: clamp( 2.5rem , 2.0464852608rem  +  2.2675736961vw , 3.75rem )) {
+    .where .social__item:first-child,
+    .where .social__item:nth-child(2) {
+      height: calc(2.5rem + 1.25 * (100vw - 20rem) / 55.125);
+    }
+}
+
+@supports (width: clamp( 2.5rem , 2.0464852608rem  +  2.2675736961vw , 3.75rem )) {
+    .where .social__item:first-child,
+    .where .social__item:nth-child(2) {
+      width: clamp( 2.5rem , 2.0464852608rem  +  2.2675736961vw , 3.75rem );
+    }
+}
+
+@supports not (width: clamp( 2.5rem , 2.0464852608rem  +  2.2675736961vw , 3.75rem )) {
+    .where .social__item:first-child,
+    .where .social__item:nth-child(2) {
+      width: calc(2.5rem + 1.25 * (100vw - 20rem) / 55.125);
+    }
+}
+
+@supports (width: clamp( 2.125rem , 1.6714852608rem  +  2.2675736961vw , 3.375rem )) {
+    .where .social__item:first-child img,
+    .where .social__item:nth-child(2) img {
+      width: clamp( 2.125rem , 1.6714852608rem  +  2.2675736961vw , 3.375rem );
+    }
+}
+
+@supports not (width: clamp( 2.125rem , 1.6714852608rem  +  2.2675736961vw , 3.375rem )) {
+    .where .social__item:first-child img,
+    .where .social__item:nth-child(2) img {
+      width: calc(2.125rem + 1.25 * (100vw - 20rem) / 55.125);
+    }
+}
+
+@supports (height: clamp( 2.125rem , 1.6714852608rem  +  2.2675736961vw , 3.375rem )) {
+    .where .social__item:first-child img,
+    .where .social__item:nth-child(2) img {
+      height: clamp( 2.125rem , 1.6714852608rem  +  2.2675736961vw , 3.375rem );
+    }
+}
+
+@supports not (height: clamp( 2.125rem , 1.6714852608rem  +  2.2675736961vw , 3.375rem )) {
+    .where .social__item:first-child img,
+    .where .social__item:nth-child(2) img {
+      height: calc(2.125rem + 1.25 * (100vw - 20rem) / 55.125);
     }
 }
 
