@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="lock">
 
 <head>
-	<title>О нас</title>
+	<title>Попап</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -587,6 +587,43 @@
 		</footer>
 
 	</div>
+	<div id="popup" class="popup popup_show">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img src="img/icons/close.svg" alt="close">
+				</button>
+				<div class="popup__text">
+					<h2 class="feedback__title title">У вас остались вопросы?</h2>
+					<div class="feedback__text text text_xl">Мы с удовольствием вам ответим!</div>
+					<form action="" class="form">
+						<div class="form__row">
+							<div class="form__line">
+								<input class="input" autocomplete="off" type="text" placeholder="Ваше имя">
+							</div>
+						</div>
+						<div class="form__row">
+							<div class="form__line">
+								<input class="input" autocomplete="off" type="text" placeholder="Ваш номер телефона">
+							</div>
+							<div class="checkbox">
+								<input id="p_a" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+								<label for="p_a" class="checkbox__label">
+									<span class="checkbox__text">
+										Оставляя свои контактные данные, Вы соглашаетесь с&nbsp;<a href="">политикой конфиденциальности</a>.
+									</span>
+								</label>
+							</div>
+						</div>
+						<div class="form__row">
+							<button class="form__button button" type="submit">Оставить заявку</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<script src="js/app.min.js?_v=20240610171823"></script>
 </body>
 
