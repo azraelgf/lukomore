@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240610172434">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240611102811">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -594,37 +594,48 @@
 					<img src="img/icons/close.svg" alt="close">
 				</button>
 				<div class="popup__text">
-					<h2 class="feedback__title title">У вас остались вопросы?</h2>
-					<div class="feedback__text text text_xl">Мы с удовольствием вам ответим!</div>
-					<form action="" class="form">
-						<div class="form__row">
-							<div class="form__line">
-								<input class="input" autocomplete="off" type="text" placeholder="Ваше имя">
+					<div class="form-wrapper">
+						<div class="form-success">
+							<div class="form-success__title title">Спасибо за вашу заявку!</div>
+							<div class="form-success__text">Мы Вам перезвоним в течение 30 минут</div>
+							<div class="form-success__img -ibg--contain">
+								<img src="img/hero-cat_success.png" alt="Image">
 							</div>
 						</div>
-						<div class="form__row">
-							<div class="form__line">
-								<input class="input" autocomplete="off" type="text" placeholder="Ваш номер телефона">
-							</div>
-							<div class="checkbox">
-								<input id="p_a" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-								<label for="p_a" class="checkbox__label">
-									<span class="checkbox__text">
-										Оставляя свои контактные данные, Вы соглашаетесь с&nbsp;<a href="">политикой конфиденциальности</a>.
-									</span>
-								</label>
-							</div>
+						<div class="form-wrapper__content">
+							<h2 class="form-wrapper__title title">У вас остались вопросы?</h2>
+							<div class="form-wrapper__text text text_xl">Мы с удовольствием вам ответим!</div>
+							<form action="" class="form">
+								<div class="form__row">
+									<div class="form__line">
+										<input class="input" autocomplete="off" type="text" placeholder="Ваше имя">
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__line">
+										<input class="input" autocomplete="off" type="text" placeholder="Ваш номер телефона">
+									</div>
+									<div class="checkbox">
+										<input id="p_a" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<label for="p_a" class="checkbox__label">
+											<span class="checkbox__text">
+												Оставляя свои контактные данные, Вы соглашаетесь с&nbsp;<a href="">политикой конфиденциальности</a>.
+											</span>
+										</label>
+									</div>
+								</div>
+								<div class="form__row">
+									<button class="form__button button" type="submit">Оставить заявку</button>
+								</div>
+							</form>
 						</div>
-						<div class="form__row">
-							<button class="form__button button" type="submit">Оставить заявку</button>
-						</div>
-					</form>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<script src="js/app.min.js?_v=20240610172434"></script>
+	<script src="js/app.min.js?_v=20240611102811"></script>
 </body>
 
 </html>
